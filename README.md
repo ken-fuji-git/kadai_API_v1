@@ -5,7 +5,7 @@
 画像から単語を自動抽出し、ダジャレを生成する
 
 ## ③アプリのデプロイURL
-https://ken-fuji-git.github.io/kadai_API_v1/
+https://ken-fuji-git.github.io/kadai_API_v1/public/index.html
 
 ## 工夫した点・こだわった点
 当初は Google Cloud Vision のAPIによって画像認識→ラベル取得を行う計画だったものの挫折。
