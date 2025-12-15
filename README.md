@@ -28,12 +28,10 @@ OpenAI の API設定もわからない事だらけで混乱した。
 6) Functions が JSON にして返却
 
 ##　　ワイヤーフレーム
-![ワイヤーフレーム]
-(./Materials/Wireframe.jpg)
+![ワイヤーフレーム](./Materials/Wireframe.jpg)
 
 ##　 スクリーンショット
-![りんごの画像を入れた時]
-(./Materials/Dajare_SS.png)
+![りんごの画像を入れた時](./Materials/Dajare_SS.png)
 
 ## 難しかった点・次回トライしたいこと（又は機能）
 とにかく全ての段階が難しかった。
