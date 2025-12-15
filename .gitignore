@@ -1,0 +1,18 @@
+js/firebase.js
+firebase.txt
+.DS_Store
+.vscode
+memo.txt
+functions/.secret.local
+
+# Firebase / logs
+.firebase/
+firebase-debug.log
+
+# Node
+node_modules/
+
+# Secrets / env
+functions/.secret.local
+functions/.env
+functions/.env.*
