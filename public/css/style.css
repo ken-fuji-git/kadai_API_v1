@@ -86,7 +86,7 @@ main {
 
 .image-area {
   position: relative;
-  height: 240px;
+  max-height: 450px;
   border: 1px dashed #d1d5db;
   border-radius: 12px;
   display: grid;
