@@ -84,6 +84,10 @@ $(async function () {
 
       $("#punText").text("画像を解析中…");
       const label = detectTopLabel(imgEl);
+
+      // 追加：MediaPipe推論結果をlogで確認したい
+      console.log("[CLIENT] MediaPipe label:", label);
+
       $("#labelText").text(label || "(検出できませんでした)");
 
       if (!label) {
@@ -92,6 +96,10 @@ $(async function () {
       }
 
       $("#punText").text("ダジャレ生成中…");
+
+      //APIに送る直前のlog
+      console.log("[CLIENT] Sending to /api:", { label });
+
       const data = await fetchPun(label);
       $("#punText").text(data.pun || "(結果なし)");
     } catch (err) {

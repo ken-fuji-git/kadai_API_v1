@@ -2,7 +2,8 @@ js/firebase.js
 firebase.txt
 .DS_Store
 .vscode
-memo.txt
+Materials/memo_account.txt
+Materials/memo_flow.txt
 functions/.secret.local
 
 # Firebase / logs

@@ -1,4 +1,6 @@
 const { onRequest } = require("firebase-functions/v2/https");
+const logger = require("firebase-functions/logger");
+
 const { defineSecret } = require("firebase-functions/params");
 
 // Secret（OpenAI API Key）
@@ -32,6 +34,13 @@ exports.api = onRequest(
 
             const { label } = req.body || {};
             const word = (label || "").toString().trim();
+
+            // 追加：Functionsが受け取った単語
+            logger.info("[FUNCTION] Received label:", word);
+
+            // OpenAIへ渡す直前（ここが「OpenAIに渡した単語」）
+            logger.info("[FUNCTION] Sending to OpenAI:", { word });
+
 
             if (!word || word.length > 40) {
                 return res.status(400).json({ error: "label is required (<= 40 chars)" });
