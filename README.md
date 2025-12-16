@@ -10,6 +10,7 @@ https://ken-fuji-git.github.io/kadai_API_v1/public/index.html
 Hosting URL: 
 https://gsdemo-91e79.web.app
 
+
 ## 工夫した点・こだわった点
 当初は Google Cloud Vision のAPIによって画像認識→ラベル取得を行う計画だったものの挫折。
 サーバーを使わないという MediaPipe Object Detector を使う方法もあると知り、そちらを採用したが、結局大変だった。
